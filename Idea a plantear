@@ -1,11 +1,13 @@
-Investigar si se puede conectar 
-la base de datos con el programa
-de Intellij para poder probar si
-son compatible o cambiar de ruta
-Poner en funciona la utlidad de 
-cada comando nuevo que aprendi
-en la clase, se utilizo los 
-comandos del ppt para poder 
-unir las tablas y guarden 
-relacion en su salida
+SELECT 
+    c.CuentaID,
+    c.NumeroCuenta,
+    c.Saldo,
+    t.TransaccionID,
+    t.Fecha,
+    t.Típo,
+    t.Monto,
+    t.EmpleadoID
+FROM Cuentas c
+INNER JOIN Transacciones t
+    ON c.CuentaID = t.CuentaID;
 
