@@ -11,3 +11,12 @@ FROM Cuentas c
 INNER JOIN Transacciones t
     ON c.CuentaID = t.CuentaID;
 
+Comando a consultar caracteristicas de la tabla
+SELECT * FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'Cliente';
+
+Comando para ordenar de en orden alfabetico
+SELECT 
+    CONCAT(ape_cli, ' ', nom_cli) AS NombreCompleto (CONCAT una las 2 columnas)
+FROM Cliente
+ORDER BY ape_cli ASC, nom_cli ASC;
