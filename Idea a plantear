@@ -20,3 +20,9 @@ SELECT
     CONCAT(ape_cli, ' ', nom_cli) AS NombreCompleto (CONCAT una las 2 columnas)
 FROM Cliente
 ORDER BY ape_cli ASC, nom_cli ASC;
+
+Consulta con el Having
+SELECT columna1, función_agregación(columna2)
+FROM tabla
+GROUP BY columna1
+HAVING condición_función_agregación;
