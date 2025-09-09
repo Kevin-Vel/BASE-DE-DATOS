@@ -26,3 +26,7 @@ SELECT columna1, función_agregación(columna2)
 FROM tabla
 GROUP BY columna1
 HAVING condición_función_agregación;
+
+Like buscar un patron comun en una columna
+SELECT * FROM Empleados
+WHERE Nombre LIKE 'J%'; -- Nombres que empiezan con 'J'
