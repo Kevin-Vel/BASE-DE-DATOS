@@ -30,3 +30,5 @@ HAVING condición_función_agregación;
 Like buscar un patron comun en una columna
 SELECT * FROM Empleados
 WHERE Nombre LIKE 'J%'; -- Nombres que empiezan con 'J'
+
+Comando 
