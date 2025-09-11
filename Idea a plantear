@@ -21,6 +21,9 @@ SELECT
 FROM Cliente
 ORDER BY ape_cli ASC, nom_cli ASC;
 
+Recuperar Datos de una Tabla
+SELECT nom_cli, edad_cli FROM Cliente;
+
 Consulta con el Having
 SELECT columna1, función_agregación(columna2)
 FROM tabla
