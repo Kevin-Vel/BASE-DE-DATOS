@@ -28,6 +28,9 @@ Muestra tabla pasando si hay un dato Null
 SELECT * FROM Prestamos
 WHERE ClienteID IS NULL;
 
+SELECT * FROM Empleados
+WHERE Nombre LIKE 'L%'; -- Nombres que empiezan con 'L
+
 Consulta con el Having
 SELECT columna1, función_agregación(columna2)
 FROM tabla
