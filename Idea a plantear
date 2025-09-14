@@ -41,4 +41,8 @@ Like buscar un patron comun en una columna
 SELECT * FROM Empleados
 WHERE Nombre LIKE 'J%'; -- Nombres que empiezan con 'J'
 
+Comando IN consultar valores en columnas especificas
+SELECT * FROM Empleados
+WHERE EmpleadoID IN (1, 3, 5);
+
 Comando 
