@@ -41,6 +41,10 @@ Like buscar un patron comun en una columna
 SELECT * FROM Empleados
 WHERE Nombre LIKE 'J%'; -- Nombres que empiezan con 'J'
 
+Comando de 3 valores true, false o null
+SELECT * FROM Prestamos
+WHERE Monto > 20000 OR Monto IS NULL;
+
 Comando BetWeen tipo un filtro de busqueda
 SELECT * FROM Prestamos
 WHERE Monto BETWEEN 30000 AND 100000; 
