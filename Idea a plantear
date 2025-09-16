@@ -41,6 +41,11 @@ Like buscar un patron comun en una columna
 SELECT * FROM Empleados
 WHERE Nombre LIKE 'J%'; -- Nombres que empiezan con 'J'
 
+Comando cuenta lo registros de cada valor
+SELECT transaccionID, COUNT(*) AS Totaltransacciones
+FROM Transacciones
+GROUP BY transaccionID;
+
 Comando de 3 valores true, false o null
 SELECT * FROM Prestamos
 WHERE Monto > 20000 OR Monto IS NULL;
