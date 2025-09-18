@@ -58,4 +58,8 @@ Comando IN consultar valores en columnas especificas
 SELECT * FROM Empleados
 WHERE EmpleadoID IN (1, 3, 5);
 
-Comando 
+Comando CONSULTA MULTIPLE
+use Banco;
+SELECT Nombre, FechaIngreso
+FROM Empleados
+WHERE EmpleadoID = 4;
