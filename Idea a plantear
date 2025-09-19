@@ -63,3 +63,10 @@ use Banco;
 SELECT Nombre, FechaIngreso
 FROM Empleados
 WHERE EmpleadoID = 4;
+
+COMANDO EXISTS o NOT EXIST
+SELECT FachaInicio
+FROM Seguro s
+WHERE EXISTS 
+(SELECT 1 FROM Prestamos p 
+WHERE p.FechaInicio = s.FechaInicio);
