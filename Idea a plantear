@@ -76,3 +76,8 @@ SELECT c.nom_cli, c.ape_cli, cu.Numerocuenta, cu.Saldo
 FROM Cliente c
 JOIN Cuentas cu ON c.clienteID = cu.ClienteID
 WHERE cu.TipoCuenta = 'Ahorros';
+
+Comando LEFT JOIN
+SELECT e.Nombre, e.Apellido, t.Típo, t.Monto, t.Fecha
+FROM Empleados e
+LEFT JOIN Transacciones t ON e.EmpleadoID = t.EmpleadoID;
