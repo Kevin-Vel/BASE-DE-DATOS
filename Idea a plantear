@@ -94,3 +94,5 @@ SELECT
 FROM Empleados e
 RIGHT JOIN Transacciones t
     ON e.EmpleadoID = t.EmpleadoID;
+
+Comando 
