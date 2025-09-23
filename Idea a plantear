@@ -81,3 +81,16 @@ Comando LEFT JOIN
 SELECT e.Nombre, e.Apellido, t.Típo, t.Monto, t.Fecha
 FROM Empleados e
 LEFT JOIN Transacciones t ON e.EmpleadoID = t.EmpleadoID;
+
+Comando RIGHT JOIN
+SELECT 
+    e.EmpleadoID,
+    e.Nombre,
+    e.Apellido,
+    t.TransaccionID,
+    t.Tipo,
+    t.Monto,
+    t.Fecha
+FROM Empleados e
+RIGHT JOIN Transacciones t
+    ON e.EmpleadoID = t.EmpleadoID;
