@@ -95,4 +95,13 @@ FROM Empleados e
 RIGHT JOIN Transacciones t
     ON e.EmpleadoID = t.EmpleadoID;
 
-Comando 
+Comando FULL JOIN
+SELECT 
+    e.Nombre + ' ' + e.Apellido AS Empleado,
+    t.TransaccionID,
+    t.Tipo,
+    t.Monto,
+    t.Fecha
+FROM Empleados e
+FULL JOIN Transacciones t
+    ON e.EmpleadoID = t.EmpleadoID;
