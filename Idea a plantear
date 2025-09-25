@@ -105,3 +105,10 @@ SELECT
 FROM Empleados e
 FULL JOIN Transacciones t
     ON e.EmpleadoID = t.EmpleadoID;
+Comando CROSS JOIN
+SELECT c.nom_cli + ' ' + c.ape_cli AS Cliente,
+       p.PrestamoID,
+       p.Monto,
+       p.TasaInteres
+FROM Cliente c
+CROSS JOIN Prestamos p;
