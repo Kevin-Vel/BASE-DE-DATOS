@@ -112,3 +112,18 @@ SELECT c.nom_cli + ' ' + c.ape_cli AS Cliente,
        p.TasaInteres
 FROM Cliente c
 CROSS JOIN Prestamos p;
+
+Comando PIVOT
+SELECT *
+FROM (
+    SELECT 
+        CuentaID,
+        DATENAME(MONTH, Fecha) AS Mes,
+        Monto
+    FROM Transacciones
+) AS Fuente
+PIVOT (
+    SUM(Monto)
+    FOR Mes IN ([Enero], [Febrero], [Marzo], [Abril], [Mayo], [Junio],
+                [Julio], [Agosto], [Septiembre], [Octubre], [Noviembre], [Diciembre])
+) AS PivotTable;
