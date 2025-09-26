@@ -105,6 +105,7 @@ SELECT
 FROM Empleados e
 FULL JOIN Transacciones t
     ON e.EmpleadoID = t.EmpleadoID;
+
 Comando CROSS JOIN
 SELECT c.nom_cli + ' ' + c.ape_cli AS Cliente,
        p.PrestamoID,
@@ -112,6 +113,13 @@ SELECT c.nom_cli + ' ' + c.ape_cli AS Cliente,
        p.TasaInteres
 FROM Cliente c
 CROSS JOIN Prestamos p;
+
+Comando UNION
+SELECT nom_cli AS Nombre
+FROM Clientes
+UNION
+SELECT Nombre
+FROM Empleados;
 
 Comando PIVOT
 SELECT *
