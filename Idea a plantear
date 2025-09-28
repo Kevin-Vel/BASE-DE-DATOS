@@ -77,6 +77,17 @@ FROM Cliente c
 JOIN Cuentas cu ON c.clienteID = cu.ClienteID
 WHERE cu.TipoCuenta = 'Ahorros';
 
+Comando Inner Join
+SELECT 
+  e.Nombre AS Empleado,
+  t.transaccionID,
+  t.Tipo,
+  t.Monto,
+  t.Fecha
+FROM Empleados e
+INNER JOIN Transacciones t 
+  ON e.EmpleadoID = t.EmpleadoID;
+
 Comando LEFT JOIN
 SELECT e.Nombre, e.Apellido, t.Típo, t.Monto, t.Fecha
 FROM Empleados e
