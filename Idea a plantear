@@ -61,6 +61,16 @@ WHERE EmpleadoID IN (1, 3, 5);
 Comando EXEC
 EXEC sp_help 'Clientes';
 
+Comando CASE
+SELECT 
+  Nombre,
+  CASE
+    WHEN Salario > 5000 THEN 'Alto'
+    WHEN Salario BETWEEN 3000 AND 5000 THEN 'Medio'
+    ELSE 'Bajo'
+  END AS NivelSalario
+FROM Empleados;
+
 Comando CONSULTA MULTIPLE
 use Banco;
 SELECT Nombre, FechaIngreso
