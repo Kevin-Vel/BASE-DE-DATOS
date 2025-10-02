@@ -165,3 +165,24 @@ PIVOT (
     FOR Mes IN ([Enero], [Febrero], [Marzo], [Abril], [Mayo], [Junio],
                 [Julio], [Agosto], [Septiembre], [Octubre], [Noviembre], [Diciembre])
 ) AS PivotTable;
+
+Comando CREATE PROCEDER
+CREATE PROCEDURE ProcesarPedido
+    @PedidoID INT
+AS
+BEGIN
+    BEGIN TRANSACTION;
+    BEGIN TRY
+        UPDATE Pedidos
+        SET Estado = 'Procesado'
+        WHERE PedidoID = @PedidoID;
+
+        COMMIT TRANSACTION;
+    END TRY
+    BEGIN CATCH
+        ROLLBACK TRANSACTION;
+        THROW;
+    END CATCH
+END
+GO
+
