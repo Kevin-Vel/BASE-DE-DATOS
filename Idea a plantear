@@ -167,15 +167,15 @@ PIVOT (
 ) AS PivotTable;
 
 Comando CREATE PROCEDER
-CREATE PROCEDURE ProcesarPedido
-    @PedidoID INT
+CREATE PROCEDURE ProcesarPrestamo
+    @PrestamoID INT
 AS
 BEGIN
     BEGIN TRANSACTION;
     BEGIN TRY
-        UPDATE Pedidos
+        UPDATE Prestamos
         SET Estado = 'Procesado'
-        WHERE PedidoID = @PedidoID;
+        WHERE PrestamoID = @PrestamoID;
 
         COMMIT TRANSACTION;
     END TRY
@@ -183,6 +183,10 @@ BEGIN
         ROLLBACK TRANSACTION;
         THROW;
     END CATCH
-END
+END;
 GO
+
+Comando para Llamar a el CREAER PROCEDER creado
+EXEC ProcesarPrestamo @PrestamoID = 1;
+
 
