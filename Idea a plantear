@@ -189,4 +189,7 @@ GO
 Comando para Llamar a el CREAER PROCEDER creado
 EXEC ProcesarPrestamo @PrestamoID = 1;
 
-
+Comando para ver resultado
+SELECT *
+FROM Prestamos
+WHERE PrestamoID = 1;
