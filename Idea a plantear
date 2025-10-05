@@ -193,3 +193,5 @@ Comando para ver resultado
 SELECT *
 FROM Prestamos
 WHERE PrestamoID = 1;
+
+Comando
