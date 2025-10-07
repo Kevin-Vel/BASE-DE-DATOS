@@ -194,4 +194,4 @@ SELECT *
 FROM Prestamos
 WHERE PrestamoID = 1;
 
-Comando para
+Comando de Funcion
