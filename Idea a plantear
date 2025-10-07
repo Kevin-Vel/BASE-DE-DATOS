@@ -195,3 +195,23 @@ FROM Prestamos
 WHERE PrestamoID = 1;
 
 Comando de Funcion
+CREATE FUNCTION dbo.fn_PrestamosActivosPorCliente(@ClienteID INT)
+RETURNS TABLE
+AS
+RETURN
+(
+    SELECT 
+        p.PrestamoID,
+        p.Monto,
+        p.TasaInteres,
+        p.FechaInicio,
+        p.FechaVencimiento,
+        p.Estado
+    FROM Prestamos p
+    INNER JOIN Cliente c ON p.ClienteID = c.ClienteID
+    WHERE p.Estado = 'Activo'
+      AND c.ClienteID = @ClienteID
+);
+GO
+
+Comando para Llamar CREATE FUNCION
