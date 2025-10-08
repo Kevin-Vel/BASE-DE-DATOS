@@ -215,3 +215,4 @@ RETURN
 GO
 
 Comando para Llamar CREATE FUNCION
+SELECT * FROM dbo.fn_PrestamosActivosPorCliente(1);
