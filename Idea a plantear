@@ -216,3 +216,13 @@ GO
 
 Comando para Llamar CREATE FUNCION
 SELECT * FROM dbo.fn_PrestamosActivosPorCliente(1);
+
+TABLA INTERMEDIA CLIENTE SEGURO
+CREATE TABLE ClienteSeguro (
+    ClienteID INT,
+    SeguroID INT,
+    FechaAsociacion DATE,
+    PRIMARY KEY (ClienteID, SeguroID),
+    FOREIGN KEY (ClienteID) REFERENCES Cliente(ClienteID),
+    FOREIGN KEY (SeguroID) REFERENCES Seguros(SeguroID)
+);
