@@ -226,3 +226,6 @@ CREATE TABLE ClienteSeguro (
     FOREIGN KEY (ClienteID) REFERENCES Cliente(ClienteID),
     FOREIGN KEY (SeguroID) REFERENCES Seguros(SeguroID)
 );
+
+ENCONTRAR BASE DE DATOS
+
