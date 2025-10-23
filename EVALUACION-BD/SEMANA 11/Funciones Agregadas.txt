@@ -20,3 +20,16 @@ FROM tabla;
 Comando Min: Obtiene el valor minimo de una de tus colummnas
 SELECT MIN(columna) AS Minimo
 FROM tabla;
+
+Group By: Se usa para agrupar registros con valor de columna en comun se utiliza junto las funcines agregadas
+SELECT columna_agrupada, SUM(columna_valor) AS Total
+FROM tabla
+GROUP BY columna_agrupada;
+
+Having: Se usa para filtrar los resultados este se puede usar junto al Group by especificamente para funciones agregadas
+ELECT columna_agrupada, SUM(columna_valor) AS Total
+FROM tabla
+GROUP BY columna_agrupada
+HAVING SUM(columna_valor) > 1000;
+
+
