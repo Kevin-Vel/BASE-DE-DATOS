@@ -1,4 +1,4 @@
-Las funciones agregadas son consultas para una mayor eficiencia en el sistema
+Las funciones agregadas son consultas para una mayor eficiencia en el sistema y poder shorrar recursos
 
 Comando SUM: Te da el total de una columna de tu tabla
 SELECT SUM(columna) AS Total
@@ -33,6 +33,7 @@ ELECT columna_agrupada, SUM(columna_valor) AS Total
 FROM tabla
 GROUP BY columna_agrupada
 HAVING SUM(columna_valor) > 1000;
+
 
 
 
