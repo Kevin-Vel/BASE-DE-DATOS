@@ -1,6 +1,8 @@
 Verifica un valor dentro de una conjunto de resultados:
-SELECT nombre
-FROM empleados
-WHERE id IN (SELECT id_empleado
-FROM ventas
-WHERE cantidad > 100);
+SELECT nom_cli
+FROM Cliente
+WHERE ClienteID IN (
+    SELECT ClienteID
+    FROM Prestamos
+    WHERE Estado = 'Activo'
+);
