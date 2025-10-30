@@ -1,0 +1,9 @@
+Las funciones agregadas son subconsultas
+que tiene varios tipos como las de In y Exist
+tambien hay tipos de funciones como las funciones
+de fecha, funciones de cadena, funciones de 
+conversion:
+
+Aplicaciones 
+-Paginas web de Compra online
+-Programas o Aplicaciones
