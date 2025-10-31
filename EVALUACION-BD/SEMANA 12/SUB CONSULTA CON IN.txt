@@ -1,5 +1,6 @@
 Verifica un valor dentro de una conjunto de resultados
-mayormente en pequeñas listas:
+que se encuentra en la lista esto mayormente se 
+utiliza en pequeñas listas:
 
 SELECT nom_cli
 FROM Cliente
@@ -8,4 +9,5 @@ WHERE ClienteID IN (
     FROM Prestamos
     WHERE Estado = 'Activo'
 );
+
 
