@@ -1,5 +1,5 @@
 Este comando verifica que si existe sl menos una fila de los redultados la imprime
-mayor eficiencia en datos grandes y ahorro de recursos.
+mayor eficiencia en datos grandes y ahorro de recursos:
 
 SELECT nom_cli
 FROM Cliente c
@@ -9,4 +9,5 @@ WHERE EXISTS (
     WHERE p.ClienteID = c.ClienteID
       AND p.Estado = 'Activo'
 );
+
 
