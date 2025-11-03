@@ -1,0 +1,20 @@
+FUNCIONES DE FECHA
+-Para obtener el dia del mes de un dato
+SELECT DAY(GETDATE()) AS DiaActual;
+
+-Para obtener el mes de un Dato
+SELECT MONTH(GETDATE()) AS MesActual;
+
+-Para obtener el año de un Dato
+SELECT YEAR(GETDATE()) AS AñoActual;
+
+-Agregar un intervalo a un Dato
+ELECT DATEADD(DAY, 10, GETDATE()) AS FechaDentroDe10Dias;
+
+-Para obtener la diferencia de 2 fechas
+SELECT DATEDIFF(DAY, '2024-01-01', GETDATE()) AS DiasDesde2024;
+
+-Para obtener fecha y hora del Sistema
+SELECT GETDATE() AS FechaHoraActual;
+
+FUNCIONES DE CADENA
