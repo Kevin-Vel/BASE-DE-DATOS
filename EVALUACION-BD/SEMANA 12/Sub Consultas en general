@@ -14,7 +14,34 @@ ELECT DATEADD(DAY, 10, GETDATE()) AS FechaDentroDe10Dias;
 -Para obtener la diferencia de 2 fechas
 SELECT DATEDIFF(DAY, '2024-01-01', GETDATE()) AS DiasDesde2024;
 
--Para obtener fecha y hora del Sistema
+-Para obtener fecha y hora d,kel Sistema
 SELECT GETDATE() AS FechaHoraActual;
 
 FUNCIONES DE CADENA
+-Para agregar uno o mas complementos
+SELECT CONCAT(nombre, ' ', apellido) AS NombreCompleto
+FROM empleados;
+
+-Para obtener la longitud de una cadena
+SELECT LEN(nombre) AS LongitudNombre
+FROM empleados;
+
+-Para obtener un dato especifico de una cadena
+SELECT SUBSTRING(nombre, 1, 3) AS Primeros3Caracteres
+FROM empleados;
+
+-Converir una cadena en Minusculas
+SELECT LOWER(nombre) AS NombreMinusculas
+FROM empleados;
+
+-Covertir una cadena en Mayuscula
+SELECT UPPER(nombre) AS NombreMayusculas
+FROM empleados;
+
+-Para eliminar espacios en blanco lado Izquierdo
+SELECT LTRIM(nombre) AS NombreSinEspaciosIzquierda
+FROM empleados;
+
+-Para eliminar espacios en blanco lado derecho
+SELECT RTRIM(nombre) AS NombreSinEspaciosDerecha
+FROM empleados;
