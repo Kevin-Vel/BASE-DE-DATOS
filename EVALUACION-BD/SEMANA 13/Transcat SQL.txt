@@ -1,0 +1,3 @@
+Nos sirve para gestionar los datos almacenados 
+utilizando variables y estructuras condicionales
+como el iF, ETC.
