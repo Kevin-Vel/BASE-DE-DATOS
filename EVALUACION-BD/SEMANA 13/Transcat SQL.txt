@@ -1,3 +1,13 @@
 Nos sirve para gestionar los datos almacenados 
-utilizando variables y estructuras condicionales
-como el iF, ETC.
+utilizando variables, estructuras condicionales,
+bucles y transacciones:
+
+-EJEMPLO DE ESTRUCTURA CONDICIONAL
+DECLARE @Monto INT = 8000;
+
+IF @Monto > 5000
+    PRINT 'Monto alto, requiere aprobación del gerente';
+ELSE
+    PRINT 'Monto dentro del límite permitido';
+
+
