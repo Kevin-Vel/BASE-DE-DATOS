@@ -1,5 +1,5 @@
-Nos sirve para gestionar los datos almacenados 
-utilizando variables, estructuras condicionales,
+Nos sirve para gestionar o consultar los datos almacenados 
+en el sistema utilizando variables, estructuras condicionales,
 bucles y transacciones:
 
 -EJEMPLO DE ESTRUCTURA CONDICIONAL
@@ -9,5 +9,6 @@ IF @Monto > 5000
     PRINT 'Monto alto, requiere aprobación del gerente';
 ELSE
     PRINT 'Monto dentro del límite permitido';
+
 
 
