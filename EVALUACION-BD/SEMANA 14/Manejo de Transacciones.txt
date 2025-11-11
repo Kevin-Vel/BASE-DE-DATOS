@@ -1,0 +1,7 @@
+Las transsacciones para que ocurra
+todo los procesos dentro de ella 
+se deben cumplir si no fuera asi 
+se debe revertir todo.
+
+-COMMIT
+
