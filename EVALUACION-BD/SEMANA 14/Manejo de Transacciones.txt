@@ -1,6 +1,7 @@
 Las transsacciones para que ocurra
 todo los procesos dentro de ella 
-se deben cumplir si no fuera asi 
+se deben cumplir todos los procesos
+dentro de esa misma, si no fuera asi 
 se debe revertir todo.
 
 -COMMIT
@@ -8,5 +9,9 @@ Es como una verificacion, si
 todo sale bien procede a modificar
 los nuevos cambios
 
--Rolback
+-Rollback
+El rollback recupera un estado anterior
+antes de un cambio si todo se cumple 
+surge el commit sino el rollback se ejecuta
+
 
