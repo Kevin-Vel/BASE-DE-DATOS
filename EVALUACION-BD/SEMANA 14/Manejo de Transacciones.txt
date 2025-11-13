@@ -4,4 +4,9 @@ se deben cumplir si no fuera asi
 se debe revertir todo.
 
 -COMMIT
+Es como una verificacion, si
+todo sale bien procede a modificar
+los nuevos cambios
+
+-Rolback
 
