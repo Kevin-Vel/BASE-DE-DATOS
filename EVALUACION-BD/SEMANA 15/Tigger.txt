@@ -1,3 +1,5 @@
 Es un procedimiento especial de almacenamiento 
 para salvaguardar la integridad de los datos 
 del sistemas hay 2 tipos:
+After Trigger: Se aplica despues de una
+operacion que modifica datos 
