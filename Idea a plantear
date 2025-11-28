@@ -1,3 +1,5 @@
+
+Juntsr 2 tablas para ver resultados
 SELECT 
     c.CuentaID,
     c.NumeroCuenta,
