@@ -1,5 +1,6 @@
 
-Juntsr 2 tablas para ver resultados
+Juntar 2 tablas para ver resultados de ambas
+tablas de difernetes ingresos
 SELECT 
     c.CuentaID,
     c.NumeroCuenta,
